@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar-->
+<nav class="navbar">
+    <div class="navbar-logo">
+      <img src="assets/navbar.png" alt="Logo" class="logo" />
+    </div>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Course.html">Course</a></li>
+      <li><a href="Membership.html">Membership</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="SignUp.html">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!--Sign Up-->
+  <div class="register-container" id="SignUp">
+    <h2>Registrasi</h2>
+    <form action="/register" method="POST">
+        <div class="input-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn-daftar">Daftar</button>
+        <p class="switch-auth">Sudah punya akun? <a href="Login.html">Login di sini</a></p>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
